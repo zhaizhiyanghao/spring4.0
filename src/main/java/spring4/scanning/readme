@@ -1,3 +1,6 @@
 1.配置
-  组件扫描 component scanning  spring 会自动发现应用上下文所创建的bean 也就是所在配置的目录下扫描并加载2
-  自动装配 autowiring
+  第一种  ：组件扫描 component scanning  spring 会自动发现应用上下文所创建的bean 也就是配置的目录下扫描并加载2
+  第二种 ： 可以使用类上增加 @ComponentScan （扫描当前类所在包下） @ContextConfiguration(classes = ScanningConfig.class) 指定
+
+2.自动装配
+  使用 autowiring

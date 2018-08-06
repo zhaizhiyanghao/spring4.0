@@ -1,17 +1,11 @@
 package spring4.scanning;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-/**
- * @author zhaizhiyang
- * @date 2018/8/6
- **/
-@Configuration
-@ComponentScan
+@Component
 public class SgtPeppers implements CompactDisc {
     @Override
     public void play() {
-        System.out.println("SgtPeppers is play");
+        System.out.println("SgtPeppers");
     }
 }
